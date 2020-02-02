@@ -11,7 +11,7 @@ function doGet(){
   var newFile = DriveApp.getFileById('FILE_ID_GOES_HERE');
   var date = new Date();
   var numMonth = date.getMonth();
-  var monthNum = date.getMonth().toString() + 1;
+  var monthNum = (date.getMonth() + 1).toString();
   var time = date.getUTCHours();
   var year = date.getFullYear();
   var leapYear = true;

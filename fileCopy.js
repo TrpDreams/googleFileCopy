@@ -53,7 +53,6 @@ function doGet(){
   else {
     var day = date.getDate().toString();
   }
-  Logger.log(day);
   var month = months[numMonth];
 
   if(monthNum.length === 1) {
